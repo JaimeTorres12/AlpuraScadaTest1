@@ -2,11 +2,11 @@
 
 :root{
     --BlueHeader:#0026a3;
-    --BlueFont: #574bff;
+    --BlueFont: #81adff;
     --gray:#574bff;
     --gray2:#f7d9d990;
-    --black1: #68a5f5;
-    --black2: #68a5f5;
+    --black1: #052958;
+    --black2: #7c9eca;
     --shadow: 0 8px 8px;
     --color_shadow: #00000033;
 }
@@ -86,8 +86,8 @@ body{
     flex-wrap: wrap;
 }
 
-.card{
-    width: 15%;
+.bigcard{
+    width: 45%;
     padding: 15px 0;
     overflow: hidden;
     background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
@@ -98,14 +98,7 @@ body{
     box-shadow: 0 0 6px var(--color_shadow);
 }
 
-.card__img{
-    width: 95%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-}
-
-.cards__text{
+.bigcards__text{
     text-align: left;
     width: 90%;
     margin:0 auto;
@@ -130,16 +123,30 @@ body{
     margin-bottom: 16px;
 }
 
-.card__button{
-    display: block;
-    background: linear-gradient(180deg, #F7CE90 0%, #F4BD76 100%);
+.card__Linea{
+    margin:0 auto;
+    background: gray;
     border-radius: 6px;
-    text-decoration: none;
-    width: 100%;
+    width: 90%;
     color: var(--black1);
-    font-weight: 700;
+    text-align: left;
+    padding: 5px 0;
+}
+.cards__textLinea{
+    color:white;
+    text-align: Center;
+    width: 100%;
+    margin:0 auto;
+    font-size: 30px;
+}
+.l1_Status{
+    color: rgb(0, 252, 0);
+    font-size: 30px;
+    margin-left: 2%;
     text-align: center;
-    padding: 12px 0;
+}
+.l1_lts{
+    font-size: 20px;
 }
 @media screen and (max-width:900px){
 
@@ -159,7 +166,7 @@ body{
         justify-content: space-evenly;
     }
 
-    .services .card{
+    .services .bigcard{
         width: 45%;
     }
 
@@ -167,7 +174,7 @@ body{
         width: 52%;
     }
 
-    .card{
+    .bigcard{
         width: 42%;
     }
 
@@ -233,7 +240,7 @@ body{
         text-align: center;
     }
 
-    .services .card{
+    .services .bigcard{
         width: 80%;
     }
 
@@ -241,10 +248,11 @@ body{
         justify-content: space-evenly;
     }
 
-    .card{
-        margin-bottom: 40px;
-        width: 65%;
+    .bigcard{
+        margin-bottom: 20px;
+        width: 100%;
     }
+   
 
     .card__title{
         font-size: 35px;
@@ -253,14 +261,15 @@ body{
     .card__button{
         width: 100%;
     }
-
- 
+    .cards__textLinea{
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width:500px){
 
 
-    .services .card{
-        width: 95%;
+    .services .bigcard{
+        width: 80%;
     }
 }
